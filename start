@@ -21,6 +21,6 @@ sed -i \
     -e 's/\(FormAuth=\).*/\1'$formauth'/' \
     /home/nzbget/nzbget.conf
 
-./nzbget/nzbget -o ControlPort=6789 -D
+./home/nzbget/nzbget -o ControlPort=6789 -D
 
 
