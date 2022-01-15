@@ -23,4 +23,6 @@ sed -i \
 
 ./nzbget/nzbget -o ControlPort=$PORT -D
 
+python3 ping.py
+
 
