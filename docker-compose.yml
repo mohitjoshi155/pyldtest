@@ -3,5 +3,5 @@ version: "3.3"
 services:
   slam:
     build: .
-    command: bash start.sh
+    command: bash /home/start
     restart: on-failure
