@@ -13,7 +13,7 @@ extensions='gclone_pp.py'
 formauth='yes'
 
 sed -i \
-    -e 's/\(ControlPort=\).*/\1'6789'/' \
+    -e 's/\(ControlPort=\).*/\1'$PORT'/' \
     -e 's/\(ControlUsername=\).*/\1'$CTRL_USERNAME'/' \
     -e 's/\(ControlPassword=\).*/\1'$CTRL_PASS'/' \
     -e 's/\(MainDir=\).*/\1'$home'/' \
@@ -21,6 +21,6 @@ sed -i \
     -e 's/\(FormAuth=\).*/\1'$formauth'/' \
     /home/nzbget/nzbget.conf
 
-./nzbget/nzbget -o ControlPort=6789 -D
+./nzbget/nzbget -o ControlPort=$PORT -D
 
 
