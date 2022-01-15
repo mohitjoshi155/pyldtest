@@ -32,6 +32,6 @@ RUN mkdir -p /home/nzbget/maindir/ \
 COPY start /home/
 COPY gclone_pp.py /home/nzbget/scripts/
 COPY ping.py /home/
-
+EXPOSE 6789
 # Run NZBGET:
 CMD bash /home/start
